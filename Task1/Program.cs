@@ -7,10 +7,12 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int count = 0;
+
 int NumberofDigit(int num)
 {
-    while (num > 0)
+    int count = 0;
+    if (num == 0) return 1;
+    while (num >= 0)
     {
         count++;
         num = num / 10;
